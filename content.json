@@ -1,0 +1,172 @@
+{
+  "site": {
+    "name": "Prachee Mahapatra",
+    "initials": "PM",
+    "pageTitle": "Prachee Mahapatra — Data, ML & Backend",
+    "description": "Portfolio of Prachee Mahapatra, Computer Science student at Shiv Nadar University building retrieval systems, databases and data products.",
+    "email": "m.prachee06@gmail.com",
+    "accent": "#59B5D2",
+    "accentOnLight": "#1F6F8B",
+    "defaultTheme": "dark",
+    "links": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/YOUR-HANDLE" },
+      { "label": "GitHub", "url": "https://github.com/YOUR-HANDLE" },
+      { "label": "LeetCode", "url": "https://leetcode.com/u/YOUR-HANDLE" }
+    ],
+    "footerNote": "Based in Bhubaneswar and Greater Noida"
+  },
+
+  "hero": {
+    "intro": "Computer Science student at Shiv Nadar University, minoring in Economics.",
+    "rolePrefix": "I build as a",
+    "roles": ["data analyst", "ML engineer", "backend developer"]
+  },
+
+  "now": [
+    { "title": "Teaching Assistant — Discrete Maths", "meta": "Shiv Nadar University, 90 students" },
+    { "title": "Technical Lead, ACM-W", "meta": "Shiv Nadar IoE Chapter, since Apr 2026" },
+    { "title": "McKinsey Forward Program", "meta": "Structured problem solving, since Sep 2026" },
+    { "title": "Building SkillSync", "meta": "FastAPI and MySQL, in progress" }
+  ],
+
+  "stats": [
+    { "value": "9.54", "label": "CGPA out of 10" },
+    { "value": "4 / 4", "label": "semesters on the Dean’s List" }
+  ],
+
+  "projectFilters": [
+    { "id": "ai", "label": "AI / ML" },
+    { "id": "backend", "label": "Backend" },
+    { "id": "data", "label": "Databases" }
+  ],
+
+  "projects": [
+    {
+      "title": "Procura",
+      "subtitle": "Hierarchical RAG for tender documents",
+      "date": "May – Jul 2026",
+      "highlight": "Parent → child",
+      "highlightLabel": "section-grounded answers",
+      "categories": ["ai", "backend", "data"],
+      "points": [
+        "Parses and normalises long, unstructured RFP and tender PDFs with Docling, then splits them into parent–child sections.",
+        "Keeps every LLM answer grounded in — and traceable to — the exact part of the source document it came from.",
+        "Stores structured document data in PostgreSQL via SQLAlchemy behind a FastAPI backend for fast, traceable lookups across large document sets.",
+        "Foundation for AI-assisted proposal drafting."
+      ],
+      "stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Docling", "LLMs"],
+      "note": "Built during the Data Analytics & AI/ML internship at Business Intelligence Professionals — taken from idea to working prototype.",
+      "link": ""
+    },
+    {
+      "title": "SkillSync",
+      "subtitle": "Peer skill-matching platform",
+      "date": "Mar 2026 – Present",
+      "highlight": "9 tables",
+      "highlightLabel": "3NF / BCNF MySQL schema",
+      "categories": ["backend", "data"],
+      "points": [
+        "Designed a 9-table MySQL schema with key, UNIQUE, ENUM and cascade constraints, plus composite indexes on frequent query paths.",
+        "Encoded matching rules in the database: 5 stored procedures, a cursor-based routine, a trigger that auto-creates a match on acceptance, and a stored function for dashboard analytics.",
+        "Migrated the backend from Flask to a FastAPI REST API with Pydantic validation and bcrypt + JWT authentication."
+      ],
+      "stack": ["Python", "FastAPI", "SQLAlchemy", "MySQL", "Pydantic", "JWT"],
+      "note": "Matches students by course and topic strengths.",
+      "link": ""
+    },
+    {
+      "title": "S.I.N.G.L.E",
+      "subtitle": "Text-to-image diffusion model",
+      "date": "Nov 2025 – May 2026",
+      "highlight": "2× faster",
+      "highlightLabel": "latency target, DDIM vs DDPM",
+      "categories": ["ai"],
+      "points": [
+        "Built a DDPM text-to-image pipeline conditioned on CLIP embeddings.",
+        "Added classifier-free guidance to improve prompt alignment.",
+        "Benchmarked DDPM vs. DDIM samplers on output quality against inference speed."
+      ],
+      "stack": ["PyTorch", "Hugging Face", "CLIP", "DDPM", "DDIM"],
+      "note": "Built with the ACM-SNIoE AI/ML team.",
+      "link": ""
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Data Analytics & AI/ML Intern",
+      "org": "Business Intelligence Professionals",
+      "place": "Bhubaneswar",
+      "start": "2026-05",
+      "date": "May – Jul 2026",
+      "points": [
+        "Completed a structured analytics track in advanced SQL, ETL pipeline design, Power BI/DAX reporting and Python (NumPy, Pandas).",
+        "Cleaned and transformed raw data into analysis-ready datasets, dashboards and reports for business review.",
+        "Built Procura from idea to working prototype, and worked with the AI/ML team on backend architecture and document-processing workflows."
+      ],
+      "tags": ["SQL", "ETL", "Power BI / DAX", "Pandas", "RAG"]
+    },
+    {
+      "role": "Teaching Assistant, Discrete Mathematics",
+      "org": "Shiv Nadar University",
+      "place": "Greater Noida",
+      "start": "2026-08",
+      "date": "Aug 2026 – Present",
+      "points": [
+        "Support a class of 90 students, breaking proofs and abstract concepts into clear, step-by-step explanations.",
+        "Guide students toward efficient solutions rather than just answers."
+      ],
+      "tags": ["Proofs", "Mentoring", "90 students"]
+    },
+    {
+      "role": "LASC Tutor, Data Structures & Algorithms",
+      "org": "Shiv Nadar University",
+      "place": "Greater Noida",
+      "start": "2025-08",
+      "date": "Aug – Dec 2025",
+      "points": [
+        "Led 39 doubt-clearing and 26 tutorial sessions for 200+ undergraduates on complexity analysis, recursion, trees and graphs.",
+        "Tailored one-on-one and small-group explanations to each student’s gaps, driving a 20–30% average improvement in performance."
+      ],
+      "tags": ["DSA", "65 sessions", "200+ students"]
+    }
+  ],
+
+  "skills": [
+    { "group": "AI / ML & NLP", "items": ["PyTorch", "scikit-learn", "TensorFlow", "Hugging Face", "LLMs", "RAG", "Embeddings", "Prompt engineering", "Document parsing"] },
+    { "group": "Backend & Databases", "items": ["FastAPI", "REST APIs", "PostgreSQL", "MySQL", "SQLAlchemy", "Database design", "ETL", "AWS"] },
+    { "group": "Data & Visualization", "items": ["SQL", "Pandas", "NumPy", "Excel", "Power BI (DAX)", "Tableau", "Matplotlib"] },
+    { "group": "Programming", "items": ["Python", "Java", "C", "SQL", "Verilog"] },
+    { "group": "Economics", "items": ["Microeconomic theory", "Quantitative reasoning"] },
+    { "group": "Tools", "items": ["Git", "GitHub", "Talend", "VS Code"] }
+  ],
+
+  "education": [
+    {
+      "school": "Shiv Nadar University",
+      "detail": "B.Tech in Computer Science & Engineering with a Minor in Economics, Greater Noida. Aug 2024 – May 2028.",
+      "highlight": "CGPA 9.54 / 10, on the Dean’s List every semester",
+      "extra": "Coursework: DSA, DBMS, Discrete Mathematics, Intro & Intermediate Microeconomics"
+    },
+    {
+      "school": "D.A.V. Public School, Bhubaneswar",
+      "detail": "Class XII 94.2%, Class X 98%, Academic Excellence Award. 2010 – 2024.",
+      "highlight": "",
+      "extra": ""
+    }
+  ],
+
+  "leadership": [
+    { "title": "McKinsey Forward Program", "org": "McKinsey.org", "date": "Sep 2026 –" },
+    { "title": "Technical Lead", "org": "ACM-W, Shiv Nadar IoE", "date": "Apr 2026 –" },
+    { "title": "AI/ML Team", "org": "ACM SNIoE", "date": "Oct 2025 –" },
+    { "title": "Competitive Programming Team", "org": "GDG On Campus", "date": "Sep 2024 –" },
+    { "title": "AWS Academy — Cloud Foundations & Architecting", "org": "Certification", "date": "Mar 2026" },
+    { "title": "Deloitte Data Analytics Job Simulation", "org": "Forage", "date": "Dec 2025" }
+  ],
+
+  "contact": {
+    "heading": "Let’s build something grounded in data.",
+    "text": "Open to internships in data analytics, ML engineering and backend development — and always happy to talk retrieval systems or microeconomics."
+  }
+}
